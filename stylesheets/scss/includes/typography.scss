@@ -1,0 +1,122 @@
+// initial variables set-up
+
+$doc-font-size:16;
+$doc-line-height:22;
+
+// mixin
+
+@mixin font-size($size) {
+      font-size: 0px + $size;
+      font-size: 0rem + $size / $doc-font-size;
+      line-height: ceil($size / $doc-line-height) * ($doc-line-height / $size);
+      margin-bottom: 0px + $doc-line-height;
+      margin-bottom: ($doc-line-height / $doc-font-size) +rem;
+}
+
+body {
+  @include font-size(16);
+  color: $grey1;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-weight: 200;
+  color: $grey1;
+  font-family: 'Helvetica Neue', Helvetica-Neue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+h1 {
+  @include font-size(36);
+}
+
+h2 {
+  @include font-size(32);
+}
+
+h3 {
+  @include font-size(24);
+}
+
+h4 {
+  @include font-size(21);
+}
+
+h5 {
+  @include font-size(18);
+}
+
+h6 {
+  @include font-size(16);
+}
+
+p {
+  font-family: "Helvetica Neue", Helvetica-Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 10px 0 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+  text-shadow: none;
+
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -webkit-transition: text-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -ms-transition: text-shadow 0.5s ease;
+}
+
+a:hover, a:focus {text-decoration: underline;}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.pink-text {
+  color: $pink;
+}
+
+/*******************************************************************************
+Small Device Styles
+*******************************************************************************/
+
+@media screen and (max-width: 480px) {
+  body {
+    @include font-size(14);
+  }
+
+  h1 {
+    @include font-size(26);
+  }
+
+  h2 {
+    @include font-size(20);
+  }
+
+  h3 {
+    @include font-size(18);
+  }
+
+  h4 {
+    @include font-size(16);
+  }
+
+  h5 {
+    @include font-size(14);
+  }
+
+  h6 {
+    @include font-size(12);
+  }
+}

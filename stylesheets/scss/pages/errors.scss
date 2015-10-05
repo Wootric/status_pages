@@ -1,0 +1,26 @@
+//Logo
+.logo-wrapper {
+  display: block;
+  margin-right: 30px;
+  height: 500px;
+}
+
+.top-error-image, .bottom-error-image {
+  display: block;
+}
+
+.top-error-image {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0px;
+  transform-origin: bottom right;
+  -webkit-transform: rotateZ(37deg);
+  -ms-transform: rotateZ(37deg);
+  transform: rotateZ(37deg);
+}
+
+.bottom-error-image {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 40px;
+}
