@@ -1,0 +1,77 @@
+@import 'includes/reset.scss';
+@import 'includes/colors.scss';
+@import 'includes/typography.scss';
+@import 'pages/errors.scss';
+/*******************************************************************************
+Theme Styles
+*******************************************************************************/
+
+body {
+  box-sizing: border-box;
+  background: #fff;
+}
+
+
+img {
+  position: relative;
+  margin: 0 auto;
+  max-width: 739px;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+}
+
+p img {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+}
+
+
+/*******************************************************************************
+Full-Width Styles
+*******************************************************************************/
+
+.outer {
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  max-width: 640px;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+#header_wrap .inner {
+  padding: 50px 10px 30px 10px;
+}
+
+#main_content {
+  padding-top: 40px;
+}
+
+.logo-wrapper {
+  float: left;
+}
+
+img.logo {
+  margin-right: 24px;
+}
+
+/*******************************************************************************
+Small Device Styles
+*******************************************************************************/
+
+@media screen and (max-width: 480px) {
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  .logo-wrapper {
+    display: none !important;
+  }
+}

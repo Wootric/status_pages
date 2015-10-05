@@ -5,7 +5,8 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Wootric Error : Oops, we seem to have encountered an error.">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/dist/stylesheet.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="//wootric-assets.s3.amazonaws.com/assets/favicon-5d1dbf16beb1629ed61e24c88ac667fe.ico" />
     <title>Wootric Error</title>
   </head>
 
@@ -14,20 +15,22 @@
     <div id="header_wrap" class="outer">
       <header class="inner">
         <div class="logo-wrapper">
-          <img src="images/zigg.png" alt="wootric" class="logo" />
+          <a href="http://www.wootric.com" class='image-wrap'>
+            <!-- <img src="images/zigg.png" alt="wootric" class="logo" /> -->
+            <img src="images/top.png" alt="wootric top" class='top-error-image' />
+            <img src="images/bottom.png" alt="wootric bottom" class='bottom-error-image' />
+          </a>
         </div>
-        <h1 id="project_title">Wootric Error</h1>
-        <h2 id="project_tagline">Oops, we seem to have encountered an error.</h2>
+        <section id="main_content" class="inner">
+          <h1 class="pink-text">Oops!</h1>
+          <h2 id="project_tagline">Well this is embarrassing. <br /> We seem to have encountered an error.</h2>
+
+          <p>Please try again in a few minutes. We have been notified of the issue and we will address it as soon as possible.</p>
+
+          <p>Thanks for your patience!</p>
+        </section>
+
       </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>Please try again in a few minutes. We have been notified of the issue and we will address it as soon as possible.</p>
-
-        <p>Thanks for your patience!</p>
-      </section>
     </div>
   </body>
 </html>
